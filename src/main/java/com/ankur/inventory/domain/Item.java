@@ -23,6 +23,10 @@ public class Item {
     @Valid
     @NotNull(message="Item info cannot be empty")
     private Info info;
+    
+    public Item() {
+    	
+    }
 
     public Item(Integer id, String name, Float price, Info info) {
         this.id = id;
