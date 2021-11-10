@@ -55,8 +55,7 @@ public class InventoryServiceIntegrationTests {
 		System.out.println("inventoryFindByNameResponse = "+inventoryFindByNameResponse.getStatus());
 	}
 	
-	@Bean
-	public RestTemplate restTemplate() {
+	private RestTemplate restTemplate() {
 	   final RestTemplate restTemplate = new RestTemplate();
 
 	   List<HttpMessageConverter<?>> messageConverters = new ArrayList<>();
